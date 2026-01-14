@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abd Alhafiz Mohammed | IT Project Manager & Senior Software Engineer</title>
+    <meta name="description" content="Professional portfolio of Abd Alhafiz Mohammed - IT Project Manager, .NET Developer, Angular Specialist, and Senior Software Engineer">
+    <meta name="keywords" content="IT Project Manager, .NET Development, Angular 18, MS SQL DBA, Senior Software Engineer, ITIL 4, ASP.NET, C#, MVC, .NET Core">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2563eb",
+                        secondary: "#1e40af",
+                        accent: "#3b82f6",
+                        dark: "#1f2937",
+                        light: "#f8fafc"
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif']
+                    },
+                    spacing: {
+                        '128': '32rem',
+                        '144': '36rem'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-primary">
+                    <span class="text-dark">Abd Alhafiz</span> Mohammed
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium transition-colors duration-300">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-primary font-medium transition-colors duration-300">Skills</a>
+                    <a href="#experience" class="text-gray-700 hover:text-primary font-medium transition-colors duration-300">Experience</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-4 space-y-3" id="mobile-menu">
+                <a href="#home" class="block text-gray-700 hover:text-primary font-medium py-2">Home</a>
+                <a href="#about" class="block text-gray-700 hover:text-primary font-medium py-2">About</a>
+                <a href="#skills" class="block text-gray-700 hover:text-primary font-medium py-2">Skills</a>
+                <a href="#experience" class="block text-gray-700 hover:text-primary font-medium py-2">Experience</a>
+                <a href="#contact" class="block text-gray-700 hover:text-primary font-medium py-2">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Abd Alhafiz Mohammed</h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-blue-100">IT Project Manager & Senior Software Engineer</h2>
+                    <p class="text-lg mb-8 text-blue-50">
+                        Experienced IT professional specializing in project management, team leadership, and full-stack development with .NET and Angular technologies.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">Contact Me</a>
+                        <a href="#experience" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-300">View Experience</a>
+                    </div>
+                </div>
+                <div class="md:w-1/3">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white/30 shadow-2xl mx-auto">
+                            <img 
+                                src="C:\Users\USER\Downloads\1744620631744.jpg" 
+                                alt="Abd Alhafiz Mohammed - Professional Photo" 
+                                class="w-full h-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-white text-dark p-4 rounded-lg shadow-lg">
+                            <div class="text-sm font-semibold">M.Sc. Information Systems</div>
+                            <div class="text-xs text-gray-600">ITIL® 4 Foundation Certified</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark">Technical Skills & Expertise</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Comprehensive skill set spanning project management, software development, and database administration</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="skill-card bg-light p-6 rounded-xl border border-gray-200 transition-all duration-300">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-tasks text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Project Management</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>IT Project Management</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Team Leadership</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>SDLC Management</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>ITIL® 4 Foundation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="skill-card bg-light p-6 rounded-xl border border-gray-200 transition-all duration-300">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-code text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Development Technologies</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>ASP.NET / C# Development</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>.NET Core & MVC Architecture</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Angular 18 & Angular.js</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>API Development & Integration</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="skill-card bg-light p-6 rounded-xl border border-gray-200 transition-all duration-300">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-database text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Database & Analytics</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>MS SQL Server DBA</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>MySQL, PostgreSQL, Oracle</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Data Analysis & Visualization</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            <span>Crystal Reports, Power BI</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark">Project Experience</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Comprehensive experience in IT project management, team leadership, and software development</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Experience Card 1 -->
+                <div class="project-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i class="fas fa-briefcase text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">IT Project Manager</h3>
+                            <p class="text-gray-600">Team Leader & Software Developer</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700 mb-6">
+                        Experienced IT professional skilled in project management, team leadership, and ASP.NET/C# development. 
+                        Specializing in MVC architecture, Crystal Reports, and .NET-based web services.
+                    </p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold text-lg mb-3 text-dark">Key Responsibilities:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                                <span>Leading cross-functional development teams</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                                <span>Managing full software development lifecycle</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                                <span>Architecting .NET-based solutions and APIs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                                <span>Implementing MVC architecture patterns</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Card 2 -->
+                <div class="project-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                            <i class="fas fa-chart-bar text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Data Analysis & Database Management</h3>
+                            <p class="text-gray-600">Database Administration & Analytics</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-700 mb-6">
+                        Proficient in database management (MS SQL Server, MySQL, PostgreSQL, Oracle), 
+                        strong in SQL and Excel for accurate data analysis. Experience in data visualization 
+                        to communicate complex information effectively.
+                    </p>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold text-lg mb-3 text-dark">Technical Expertise:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-database text-primary mt-1 mr-2"></i>
+                                <span>MS SQL Server Database Administration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chart-line text-primary mt-1 mr-2"></i>
+                                <span>Data Visualization with Power BI & Excel</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-server text-primary mt-1 mr-2"></i>
+                                <span>Multi-database platform management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-file-alt text-primary mt-1 mr-2"></i>
+                                <span>Crystal Reports development</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Skills Grid -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-center mb-8 text-dark">Additional Technical Proficiencies</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white p-4 rounded-lg text-center shadow-sm">
+                        <div class="text-primary text-2xl mb-2">
+                            <i class="fab fa-angular"></i>
+                        </div>
+                        <div class="font-semibold">Angular 18</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg text-center shadow-sm">
+                        <div class="text-primary text-2xl mb-2">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="font-semibold">.NET Core</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg text-center shadow-sm">
+                        <div class="text-primary text-2xl mb-2">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="font-semibold">Power BI</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg text-center shadow-sm">
+                        <div class="text-primary text-2xl mb-2">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="font-semibold">ITIL® 4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark">Get In Touch</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Available for consulting, project management, and development opportunities</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-dark">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Email</h4>
+                                <p class="text-gray-600">Hafizkooo7@gmail.com</p>
+                                <p class="text-sm text-gray-500 mt-1">Typically responds within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Phone</h4>
+                                <p class="text-gray-600">+974 33818718</p>
+                                <p class="text-sm text-gray-500 mt-1">Available Sunday-Friday, 9AM-6PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Location</h4>
+                                <p class="text-gray-600">Based in Doha, Qatar</p>
+                                <p class="text-sm text-gray-500 mt-1">Open to remote and onsite opportunities</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-lg mb-4">Professional Profiles</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-gray-100 p-3 rounded-lg hover:bg-primary hover:text-white transition-colors duration-300">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 p-3 rounded-lg hover:bg-gray-800 hover:text-white transition-colors duration-300">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 p-3 rounded-lg hover:bg-blue-400 hover:text-white transition-colors duration-300">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div>
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="your.email@example.com">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Project inquiry or question">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Describe your project or inquiry..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-secondary transition-colors duration-300">
+                            Send Message
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold mb-2">Abd Alhafiz Mohammed</div>
+                    <p class="text-gray-400">IT Project Manager & Senior Software Engineer</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a>
+                    <a href="#skills" class="text-gray-400 hover:text-white transition-colors duration-300">Skills</a>
+                    <a href="#experience" class="text-gray-400 hover:text-white transition-colors duration-300">Experience</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Abd Alhafiz Mohammed. All rights reserved.</p>
+                <p class="mt-2 text-sm">IT Project Manager || .NET Development || Angular 18 || MS SQL DBA || Senior Software Engineer || ITIL® 4 Foundation || M.Sc. of Information's Systems</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Basic validation
+            if(!name || !email || !message) {
+                alert('Please fill in all required fields');
+                return;
+            }
+            
+            // In a real application, you would send this data to a server
+            // For now, we'll just show a success message
+            alert('Thank you for your message! I will get back to you soon.');
+            contactForm.reset();
+        });
+        
+        // Professional data
+        const professionalData = {
+            "name": "Abd Alhafiz Mohammed",
+            "title": "IT Project Manager & Senior Software Engineer",
+            "skills": [
+                "IT Project Management",
+                "Team Leadership",
+                "SDLC",
+                "ASP.NET/C# Development (MVC)",
+                ".NET Core",
+                "Angular 18",
+                "API Development",
+                "Data Analysis & Visualization",
+                "Crystal Reports",
+                "Database Management (MS SQL Server, MySQL, PostgreSQL, Oracle)"
+            ],
+            "certifications": [
+                "ITIL® 4 Foundation",
+                "M.Sc. of Information's Systems"
+            ]
+        };
+        
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Portfolio loaded for:', professionalData.name);
+        });
+    </script>
+</body>
+</html>
